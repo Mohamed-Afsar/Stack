@@ -37,8 +37,8 @@ final class StackTests: XCTestCase {
         // Dequeue
         XCTAssertEqual(stack2.pop(), bSix)
         XCTAssertEqual(stack2.count, 5)
-        XCTAssertEqual(stack2.pop(bThree), true)
-        XCTAssertEqual(stack2.pop("unknown"), false)
+        stack2.pop(bThree)
+        stack2.pop("unknown")
         
         // Peek
         XCTAssertEqual(stack2.peek(), bFive)
